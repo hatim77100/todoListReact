@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Button from "./Button";
 
 function AddToDo({ addTodo }) {
   const [value, setValue] = useState("");
@@ -32,7 +33,8 @@ function AddToDo({ addTodo }) {
         placeholder="Ajouter une todo"
         className="mr-15 flex-fill"
       />
-      <button onClick={handleClick} className="btn btn-primary">Ajouter</button>
+      <Button text="Ajouter" onClick={handleClick}/>
+      {/* <button onClick={handleClick} className="btn btn-primary">Ajouter</button> */}
     </div>
   );
 }
